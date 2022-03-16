@@ -114,4 +114,14 @@ public class PlayerMovement : MonoBehaviour
             anim.SetTrigger("idleTrigger");
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("collision happened!");
+        if (collision.gameObject.tag == "Enemy")
+        {
+            anim.SetTrigger("attackTrigger");
+            Destroy(gameObject);
+        }
+    }
 }
