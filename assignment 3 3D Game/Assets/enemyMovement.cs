@@ -37,6 +37,7 @@ public class enemyMovement : MonoBehaviour
             enemy.SetDestination(guidePoints[currentGuideIndex].transform.position);
         }
 
+        /*
         RaycastHit hit;
         Ray ray = new Ray(transform.position, guidePoints[currentGuideIndex].transform.position - transform.position);
 
@@ -44,5 +45,6 @@ public class enemyMovement : MonoBehaviour
         {
             enemy.SetDestination(guidePoints[currentGuideIndex].transform.position);
         }
+        */
     }
 }
