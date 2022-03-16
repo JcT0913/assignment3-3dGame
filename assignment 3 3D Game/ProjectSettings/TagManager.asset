@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - PlayerModel
+  - Ground
+  - Wall
+  - Enemy
+  - GuidePoint
   layers:
   - Default
   - TransparentFX
